@@ -11,23 +11,23 @@ public class PlayerMove : MonoBehaviour
     public float runSpeed = 10f;
     public float jumpForce = 4000f;
     private bool jumping = false;
-    SpriteRenderer sr;
-    Animator animator;
+    // SpriteRenderer sr;
+    // Animator animator;
 
 
     // Start is called before the first frame update
     void Start()
     {
         body = GetComponent<Rigidbody2D>();
-        sr = GetComponent<SpriteRenderer>();
-        animator = GetComponent<Animator>();
+       // sr = GetComponent<SpriteRenderer>();
+        // animator = GetComponent<Animator>();
     }
 
     // Update is called once per frame
     void Update()
     {
         horizontal = Input.GetAxisRaw("Horizontal");
-        animator.SetFloat("Horizontal", horizontal);
+       // animator.SetFloat("Horizontal", horizontal);
 
         if (Input.GetKeyDown("space") && !jumping)
         {
@@ -37,10 +37,10 @@ public class PlayerMove : MonoBehaviour
 
         if (horizontal < 0)
         {
-            sr.flipX = true;
+           // sr.flipX = true;
         } else
         {
-            sr.flipX = false;
+           // sr.flipX = false;
         }
     }
 
