@@ -2337,7 +2337,6 @@ GameObject:
   - component: {fileID: 1083819131}
   - component: {fileID: 1083819134}
   - component: {fileID: 1083819133}
-  - component: {fileID: 1083819132}
   m_Layer: 0
   m_Name: parallax-space-backgound
   m_TagString: Untagged
@@ -2361,20 +2360,6 @@ Transform:
   m_Father: {fileID: 783710255}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1083819132
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1083819130}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5d395fbdd107d9c4b9cf701464fc8170, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  cam: {fileID: 0}
-  parallaxAmount: 0
 --- !u!114 &1083819133
 MonoBehaviour:
   m_ObjectHideFlags: 0
