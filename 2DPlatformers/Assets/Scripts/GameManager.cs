@@ -14,6 +14,7 @@ public class GameManager : MonoBehaviour
     public GameObject backgroundImage;
     public GameObject events;
     public GameObject canvas;
+    public Rigidbody2D player;
 
     // Start is called before the first frame update
     void Start()
@@ -89,6 +90,13 @@ public class GameManager : MonoBehaviour
         startButton.SetActive(true);
         StopAllCoroutines();
         StartCoroutine(ColorLerp(new Color(1, 1, 1, 1), 2f));
+    }
+
+    public void PlayerFalls()
+    {
+       if (player.position.y < -30) {
+            GameOver();
+        }
     }
 
 }
