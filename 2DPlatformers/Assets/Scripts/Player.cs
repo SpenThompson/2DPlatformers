@@ -9,7 +9,7 @@ public class Player : MonoBehaviour
 
     private float horizontal;
     public float runSpeed = 10f;
-    public float jumpForce = 400f;
+    public float jumpForce = 4000f;
     private bool jumping = false;
 
     // Start is called before the first frame update
@@ -25,7 +25,7 @@ public class Player : MonoBehaviour
 
         if (Input.GetKeyDown("space") && !jumping)
         {
-            body.AddForce(transform.up * jumpForce);
+            body.AddForce(new Vector2(0, jumpForce));
             jumping = true;
         }
     }
