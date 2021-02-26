@@ -64,7 +64,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: 3dbc0c667139aed4aa1e6abd1f3e3d39, type: 2}
+  m_Motion: {fileID: 7400000, guid: 5acde829372557849ae0319882b3f9c4, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
@@ -76,7 +76,7 @@ AnimatorController:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: New Piskel (1)_0
+  m_Name: Player Animator
   serializedVersion: 5
   m_AnimatorParameters:
   - m_Name: Horizontal
