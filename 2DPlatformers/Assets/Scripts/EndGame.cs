@@ -28,23 +28,8 @@ public class EndGame : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.CompareTag("Player"))
-        {
-
-            StartCoroutine(endGame());
-            
-        }
-        
-    }
-
-    IEnumerator endGame()
-    {
         ps.Play();
-        asource.Play();
-
-        yield return new WaitForSeconds(2f);
-        SceneManager.LoadScene(toTravel, LoadSceneMode.Single);
-        GameManager.Instance.GameOver();
+        StartCoroutine(LoadYourAsyncScene(toTravel));
     }
 
     IEnumerator LoadYourAsyncScene(string scene)
