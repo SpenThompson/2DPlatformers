@@ -28,7 +28,7 @@ public class GameManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        PlayerFalls();
     }
 
     private void Awake()
@@ -37,8 +37,6 @@ public class GameManager : MonoBehaviour
         {
             Instance = this;
             DontDestroyOnLoad(gameObject);
-            DontDestroyOnLoad(canvas);
-            DontDestroyOnLoad(events);
         }
         else
         {

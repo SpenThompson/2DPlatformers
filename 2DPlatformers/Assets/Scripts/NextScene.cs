@@ -21,10 +21,7 @@ public class NextScene : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.CompareTag("Player"))
-        {
             StartCoroutine(LoadYourAsyncScene(toTravel));
-        }
     }
 
     IEnumerator LoadYourAsyncScene(string scene)
