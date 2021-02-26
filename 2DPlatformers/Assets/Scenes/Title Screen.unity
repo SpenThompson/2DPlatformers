@@ -252,6 +252,7 @@ MonoBehaviour:
   startButton: {fileID: 2127405921}
   creditsButton: {fileID: 843230542}
   tutorialButton: {fileID: 404041181}
+  menuButton: {fileID: 0}
   backgroundImage: {fileID: 1399956586}
   events: {fileID: 1500234188}
   canvas: {fileID: 1319174296}
@@ -1776,7 +1777,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Tutorial
+  m_text: Controls
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: b62bc6f4d1aa3ee4691002ffa8c632d3, type: 2}
   m_sharedMaterial: {fileID: -7307571206854723939, guid: b62bc6f4d1aa3ee4691002ffa8c632d3, type: 2}
