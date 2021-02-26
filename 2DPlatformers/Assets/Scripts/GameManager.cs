@@ -12,6 +12,7 @@ public class GameManager : MonoBehaviour
 
     public GameObject startButton;
     public GameObject creditsButton;
+    public GameObject tutorialButton;
     public GameObject backgroundImage;
     public GameObject events;
     public GameObject canvas;
@@ -90,6 +91,12 @@ public class GameManager : MonoBehaviour
     {
         creditsButton.SetActive(false);
         StartCoroutine(LoadYourAsyncScene("Credits"));
+    }
+
+    public void TutorialButton()
+    {
+        tutorialButton.SetActive(false);
+        StartCoroutine(LoadYourAsyncScene("Tutorial"));
     }
 
     public void GameOver()
