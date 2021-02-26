@@ -7629,7 +7629,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c613092b41f489640975adf09c16b56b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  toTravel: Title Screen
+  toTravel: Level3
 --- !u!1001 &976177133
 PrefabInstance:
   m_ObjectHideFlags: 0
